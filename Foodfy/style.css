@@ -1,0 +1,174 @@
+/*INDEX*/
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 940px;
+    margin: 5vh auto 0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+header .info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10%;
+}
+
+a{
+    text-decoration: none;
+    color:#111111
+}
+
+.show{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+
+
+    margin-top: 24px;
+
+    height: 366px;
+
+    align-items: center;
+}
+
+.show .text{
+    width: 316px;
+    margin-left: 4.3%;
+
+}
+
+.show img{
+    width: 216px;
+    height: 300px;
+    margin-right: 7.1%;
+
+    position: absolute;
+    right: 30vh;
+    bottom: 33vh;
+
+}
+
+h4{
+    text-align: justify;
+    font-weight: 400;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.card img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+h5{
+    font-weight: 400;
+    color: #777777;
+}
+
+.rights{
+    background: #eeeeee;
+    width: 100vw;
+    height: 62px;
+    position: absolute;
+    left: 0vh;
+
+}
+
+.rights h5{
+    text-align: center;
+    align-items: center;
+
+}
+
+/*SOBRE*/
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.text h4{
+    margin-top: 0;
+}
+
+h3,
+h4{
+    line-height: 25px;
+}
+
+.receipts,
+.about,
+.index{
+    font-weight: bold;
+}
+
+/*MODAL*/
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 1123px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal .content{
+    background-color: white;
+    width: 660px;
+    height: 413px;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.modal .content img{
+    width: 600px;
+    height: 200px;
+    border-radius: 16px;
+    margin-top: 16px;
+    
+}
+
+.modal .content .text{
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.modal .content .text h4{
+    font-weight: 400;
+    color: #777777;
+}
+
+.modal a{
+    color: #999999;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
